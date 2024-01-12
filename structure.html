@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Ways to structure your html:</h1>
+    <h3>Basic Structural Tags</h3>
+    <ul>
+        <li>
+            <p>The &lt;p&gt; tag is a paragraph that sets up a section of screen for text.</p>
+        </li>
+    </ul>
+    <img src="images/ptag.png" alt="p tag">
+    <ul>
+        <li><p> Div tag and span tag are also another way to section text. The difference between them is that div is a <b>block element(linebreaks before and after)</b> while span is an <b>inline element(no linebreaks).</b> Read more below.</p></li>
+    </ul>
+    <img src="images/divvsspan.png" alt="div vs span">
+    <div>
+        <p>Divs and ps are block elements. They always start on a new line and take up as much horizontal space as possible. 
+            On the other hand, the span tag is inline elements. They only take up as much space as the content itself. 
+        </p>
+    </div>
+        <h3>Indentation!</h3>
+        <p>While the browser doesn't care about indentation. It is important to include indentation to make the program easier to read and understand.</p>
+        <img src="images/indent.jpg" alt="proper indentation">
+
+        <h3>HTML Entities</h3>
+        <p>Sometimes, when a HTML text includes the less than or greater than sign, the browser might mix them with tags. To fix this issue, you would use something called entities.  
+        </p>
+        <div>
+            <p>Here are some examples:
+                <ul>
+                    <li><p> < (less than) = &amp;lt;</p></li> </p></li>
+                    <li><p> > (greater than) = &amp;gt;</p></li> </p></li>
+                </ul>
+            </p>
+            <img src="images\than.png" alt="Entities Usage Example">
+        </div>
+   
+   
+   
+        <p>All HTML documents must start with this tag. It tells the browser about what document type to expect, an in this case: HTML.</p>
+   <h3>html Elements</h3>
+   <p>The root element of this HTML page. All other elements are descendants of this element. Make sure to use lowercase letters. Upper case are outdated.</p>
+   <h3>head tag</h3>
+   <p>Contains the metadata about the document. It is a descendants of the html tag./</p>
+   <h3>body tag</h3>
+   <p>This contains all the content of the HTML page.</p>
+   <h3>Everything Else:</h3>
+
 </body>
 </html>
