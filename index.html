@@ -16,10 +16,35 @@
         }
     </style>
 </head>
+<script>
+     function validateForm() { 
+    // Get the values of the form elements 
+    var name = document.getElementById("name").value; 
+    var email = document.getElementById("email").value; 
+    var feedback = document.getElementById("feedback").value; 
+ 
+    // Checks if the form is empty or not
+    if (name == "") { 
+      alert("Name is required"); 
+      return false; 
+    } 
+    if (email == "") { 
+      alert("Email is required"); 
+      return false; 
+    } 
+    if (feedback == "") { 
+      alert("Feedback is required"); 
+      return false; 
+    } 
+ 
+    // If the form is all filled, it will return true and the user can submit
+    return true; 
+  } 
+</script>
 <body>
     <h1>YOUR Guide to JavaScript</h1>
     <div class="topnav">
-        <a class="active" href="home.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="learn.html">Learn!</a>
         <a href="resources.html">Additional Resources!</a>
       </div>
@@ -30,5 +55,16 @@
       <p>Watch this video to learn more about JavaScript!</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/upDLs1sn7g4?si=DPSwLhzs065CERJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+    <h2>Got Feedbacks?</h2>
     </body>
+
+    <form onsubmit="return validateForm()"> 
+        <label for="name">Name:</label><br> 
+        <input type="text" id="name" name="name"><br> 
+        <label for="email">Email:</label><br> 
+        <input type="text" id="email" name="email"><br> 
+        <label for="feedback">Feedback:</label><br> 
+        <textarea id="feedback" name="feedback"></textarea><br><br> 
+        <input type="submit" value="Submit"> 
+      </form>  
 </html>
